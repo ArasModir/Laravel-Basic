@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>My Blog</title>
     <link rel="stylesheet" href="/app.css">
 
     </script>
-  </head>
-  <body>
+</head>
+<body>
 
-    <article>
-      <?= $post; ?>
-    </article>
+<article>
+    <h1>
+        <?= $post->title; ?>
+    </h1>
 
-    <a href="/">Go Back</a>
+    <div>
+        <?= $post->body; ?>
+    </div>
+</article>
 
-  </body>
+<a href="/">Go Back</a>
+
+</body>
 </html>
