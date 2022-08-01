@@ -1,4 +1,13 @@
-<x-layout>
+@extends('components.layout')
+
+@section('banner')
+
+    <h1>My Blog</h1>
+
+@endsection
+
+@section('content')
+
     @foreach ($posts as $post)
 
         <article class="{{ $loop -> even ? 'foobar' : '' }}">
@@ -12,4 +21,6 @@
             </div>
         </article>
     @endforeach
-</x-layout>
+
+@endsection
+
