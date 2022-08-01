@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="/app.css">
+@extends('components.layout')
 
-    </script>
-</head>
-<body>
+@section('content')
 
-<article>
-    <h1>
-        {{ $post -> title }}
-    </h1>
+    <article>
+        <h1>
+            {{ $post -> title }}
+        </h1>
 
-    <div>
-        {!! $post -> body !!}
-    </div>
-</article>
+        <div>
+            {!! $post -> body !!}
+        </div>
+    </article>
 
-<a href="/">Go Back</a>
+    <a href="/">Go Back</a>
+@endsection
 
-</body>
-</html>
