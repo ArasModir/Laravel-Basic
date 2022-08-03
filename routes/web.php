@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
+    
+//    xdebug_info();
     return view('posts', [
         'posts' => Post::all()
     ]);
